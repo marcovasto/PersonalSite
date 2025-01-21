@@ -1,0 +1,56 @@
+// Section layout
+.section {
+    width: 100%;
+    padding: 3rem 0;  // Vertical spacing for sections
+}
+
+header,
+main,
+footer.section {
+    background-color: $tertiary-color;
+}
+
+section.section {
+    background-color: $secondary-color;
+}
+
+// Container layout
+.container {
+    max-width: 1000px;  // Maximum width for content
+    margin: 0 auto;  // Centers content
+    padding-inline: 1rem;  // Horizontal padding
+}
+
+// Grid layout
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@include desktop-breakpoint {
+    .grid {
+        grid-template-columns: 60% 40%;
+    }
+}
+
+// CV container grid layout
+    .cv-container {
+    display: grid;
+    gap: 2rem;
+}
+
+@include desktop-breakpoint {
+    .work-experience {
+        grid-column: span 2; // Occupies full width on desktop
+    }
+
+    .education-certifications,
+    .tech-skills {
+        grid-column: span 1; // Side by side on desktop
+    }
+
+    .cv-container {
+        grid-template-columns: 1fr 1fr; // Two-column layout on desktop
+    }
+}

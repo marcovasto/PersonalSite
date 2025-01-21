@@ -1,101 +1,18 @@
-@import "config";
-@import "buttons";
-@import "cards";
+// Base styles (fundamentals)
+@import 'base/reset';       // Reset: elimina stili di default del browser
+@import 'base/variables';   // Variabili: colori, dimensioni, ecc.
+@import 'base/mixin';      // Mixin: funzioni e utility globali
 
-header {
-    
-    // .column-1 {
+// Typography styles
+@import 'typography/typography'; // Font, testi, liste, ecc.
 
-    //     @media (min-width: 800px) {
-    //         align-items: start;
-    //         justify-content: center;
-    //     }
+// Layout styles
+@import 'layouts/global';   // Stili globali: *, body, html
+@import 'layouts/layout';   // Container, sezioni, griglia
+@import 'layouts/navbar';   // Navbar e navigazione
 
-    // }
-
-    .column-2 {
-        text-align: center;
-        // overflow: hidden;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-    }
-
-    img {
-        max-width: 500px;
-    }
-}
-
-// logos slider
-
-.logos {
-    overflow: hidden;
-    white-space: nowrap;
-    padding-top: 1.5rem;
-
-    svg {
-        fill: $primary-color;
-        height: 2.5rem;
-        margin: 0 3rem;
-    }
-
-    .logos-slide {
-        display: inline-block;
-        animation: 15s slide infinite linear;  
-    }
-
-    @keyframes slide {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-}
-
-
-// Single-column grid layout by default, switches to a two-column layout (2fr 1fr) for screens wider than 800px.
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-
-@media (min-width: 800px) {
-    .grid {
-        grid-template-columns: 2fr 1fr;
-    }
-}
-
-// Contact form styles
-
-.contact-form {
-    .form-control {
-        background-color: $secondary-color;
-        color: $primary-color;
-        padding: 1rem 2rem;
-        border: 1px solid $primary-color;
-        border-radius: 1rem;
-        transition: all 0.3s ease;
-
-        &::placeholder {
-            color: $primary-color;
-        }
-
-        &:hover {
-            background-color: $secondary-color-1;
-        }
-
-        &:focus {
-            background-color: $secondary-color-2;
-            border-color: $secondary-color;
-            color: $primary-color;
-
-            // Optional: variable for consistent box-shadow control
-            box-shadow: 0 0 0 0.2rem rgba($secondary-color, 0.25);
-        }
-    }
-}
+// Component styles
+@import 'components/header';       // Header
+@import 'components/contact-form'; // Form di contatto
+@import 'components/logos';        // Slider loghi
+@import 'components/cards';        // Card o sezioni personalizzate

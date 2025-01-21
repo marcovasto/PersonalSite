@@ -1,0 +1,42 @@
+.contact-form {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .form-control {
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding: 1rem;
+        border: 1px solid $primary-color;
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: $primary-color;
+        }
+
+        &:hover {
+            background-color: $secondary-color-1;
+        }
+
+        &:focus {
+            background-color: $secondary-color-2;
+            border-color: $secondary-color;
+            color: $primary-color;
+            box-shadow: 0 0 0 0.2rem rgba($secondary-color, 0.25);
+        }
+    }
+
+    .form-control:last-of-type {
+        margin-bottom: 0.6rem;
+    }
+
+    .custom-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-size: $font-size-h1;
+    font-weight: $font-bold;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    font-weight: $font-semi-bold;
+}
+
+h3 {
+    font-size: $font-size-text;
+    font-weight: $font-semi-bold;
+}
+
+p {
+    font-size: $font-size-text;
+    font-weight: $font-regular;
+}
+
+ul {
+    list-style-type: none;
+    font-size: $font-size-text;
+    font-weight: $font-regular;
+}
+
+a {
+    text-decoration: none;
+    font-size: $font-size-text;
+    font-weight: $font-semi-bold;
+    color: $tertiary-color-2;
+
+
+    &:hover,
+    &:focus {
+        color: $tertiary-color-1;
+    }
+
+    &:active {
+        color: $tertiary-color;
+    }
+}  

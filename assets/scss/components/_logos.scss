@@ -1,0 +1,25 @@
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 1.5rem;
+
+    svg {
+        fill: $primary-color;
+        height: 2.5rem;
+        margin: 0 3rem;
+    }
+
+    .logos-slide {
+        display: inline-block;
+        animation: 15s slide infinite linear;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}

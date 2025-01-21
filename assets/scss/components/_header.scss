@@ -1,0 +1,26 @@
+header {
+    margin-top: 50px;
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+    }
+
+    h1 {
+        justify-self: center;
+    }
+
+    .colored-title {
+        color: $tertiary-color-2;
+    }
+
+    img {
+        max-width: 500px;
+        justify-self: center;
+    }
+}
+
+.center-element {
+    text-align: center;
+}
