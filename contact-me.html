@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Vasto Portfolio</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d4c7712896.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#" class="navbar-logo">Marco Vasto Portfolio</a>
+
+            <!-- Hamburger Icon -->
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                <li><a href="contact-me.html">Contact Me</a></li>
+            </ul>            
+        </div>
+    </nav>
+
+    <header class="section">
+        <div class="container">
+            <div class="header-grid">
+
+                <h1>
+                    CONTACT ME
+                </h1>
+
+                <p>
+                    If you’d like to get in touch, ask a question, or discuss a project idea, feel free to reach out. I’m always open to new connections and opportunities to collaborate on projects.
+                </p>
+
+                <div class="button-container">
+                    <a class="custom-button">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a class="custom-button">
+                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                    </a>
+                </div>
+
+                <img src="assets/images/email.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container contact-form">
+
+            <form id="contact-form" target="_blank" action="" method="POST">
+                <div>
+                    <input type="text" name="name" class="form-control" placeholder="Complete name" required>
+                </div>
+                <div>
+                    <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                </div>
+                <div>
+                    <textarea placeholder="You're message" class="form-control" name="message" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="custom-button">Send mail</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer class="section">
+        <div class="container">
+            <p>&copy; 2025 Marco Vasto | All Rights Reserved</p>
+        </div>
+    </footer> 
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

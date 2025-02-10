@@ -35,12 +35,51 @@ section.section {
 }
 
 // CV container grid layout
-    .cv-container {
+.cv-container {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
+
+    .work-experience,
+    .education-certifications,
+    .tech-skills {
+        gap: 1rem;
+        // border: 1px solid red; // Debugging border (remove before production)
+    }
+
+    .job {
+        border-bottom: 1px solid $tertiary-color-1;
+        padding: 1rem 0;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        h3,
+        strong {
+            color: $tertiary-color-2;
+        }
+
+        p {
+            padding-bottom: 0.3rem;
+        }
+
+        ul {
+            list-style-type: "-";
+            padding-left: 0.5rem;
+            
+            li {
+                padding-left: 0.5rem;
+            }
+        }
+    }
 }
 
 @include desktop-breakpoint {
+    .cv-container {
+        grid-template-columns: 1fr 1fr; // Two-column layout on desktop
+    }
+
     .work-experience {
         grid-column: span 2; // Occupies full width on desktop
     }
@@ -48,9 +87,5 @@ section.section {
     .education-certifications,
     .tech-skills {
         grid-column: span 1; // Side by side on desktop
-    }
-
-    .cv-container {
-        grid-template-columns: 1fr 1fr; // Two-column layout on desktop
     }
 }

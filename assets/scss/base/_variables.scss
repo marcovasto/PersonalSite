@@ -20,6 +20,6 @@ $font-semi-bold: 600;
 $font-bold: 800;
 
 // Font sizes
-$font-size-h1: 3.5rem;
+$font-size-h1: clamp(2rem, 1rem + 4.5vw, 5rem);
 $font-size-h2: clamp(1.1rem, 1rem + 0.7vw, 1.8rem);
-$font-size-text: clamp(1rem, 0.85rem + 0.4vw, 1.2rem);
+$font-size-text: clamp(1rem, 0.9rem + 0.8vw, 1.2rem); //clamp(1rem, 0.85rem + 0.4vw, 1.2rem);

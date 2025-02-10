@@ -1,5 +1,7 @@
 header {
+    position: relative;
     margin-top: 50px;
+    overflow: hidden;
 
     .header-grid {
         display: grid;
@@ -8,19 +10,19 @@ header {
     }
 
     h1 {
+        text-align: center;
         justify-self: center;
+        color: $tertiary-color-2;
+        line-height: 1;
+        margin-bottom: 1.3rem;
     }
 
-    .colored-title {
-        color: $tertiary-color-2;
+    .button-container {
+        padding-bottom: 3rem;
     }
 
     img {
-        max-width: 500px;
+        max-height: 500px;
         justify-self: center;
     }
-}
-
-.center-element {
-    text-align: center;
 }
