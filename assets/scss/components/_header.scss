@@ -1,28 +1,39 @@
 header {
     position: relative;
     margin-top: 50px;
-    overflow: hidden;
 
     .header-grid {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 0rem;
+        gap: 1rem;
     }
 
     h1 {
-        text-align: center;
         justify-self: center;
         color: $tertiary-color-2;
-        line-height: 1;
-        margin-bottom: 1.3rem;
     }
 
-    .button-container {
-        padding-bottom: 3rem;
+    .header-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 500px;
+        }
     }
 
-    img {
-        max-height: 500px;
-        justify-self: center;
+    @include desktop-breakpoint {
+        .header-grid {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .header-content {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
     }
 }

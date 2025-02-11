@@ -48,7 +48,7 @@ section.section {
     }
 
     .job {
-        border-bottom: 1px solid $tertiary-color-1;
+        border-bottom: 6px dotted $tertiary-color;
         padding: 1rem 0;
 
         &:last-of-type {
