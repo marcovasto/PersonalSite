@@ -13,3 +13,9 @@ body {
 footer {
     text-align: center;
 }
+
+// remove scrollbar
+
+::-webkit-scrollbar {
+    display: none;
+}
