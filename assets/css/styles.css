@@ -81,7 +81,7 @@ section.section {
   background-color: #F2F4F3;
 }
 
-.container {
+.custom-container {
   max-width: 1000px;
   margin: 0 auto;
   padding-inline: 1rem;
@@ -143,96 +143,21 @@ section.section {
   }
 }
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 50px;
   background-color: #F2F4F3;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1000px;
-  padding: 0 1rem;
-}
-
-.navbar-logo {
+.navbar a {
   color: #183153;
-  text-decoration: none;
-  font-size: 1.3rem;
+}
+.navbar a:hover {
+  color: #0d1a2b;
+}
+.navbar .nav-link.active {
+  color: #183153 !important;
   font-weight: bold;
 }
 
-.navbar-toggle {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  align-items: center;
-}
-
-.hamburger {
-  width: 25px;
-  height: 3px;
-  background-color: #183153;
-}
-
-.navbar-menu {
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  background-color: #F2F4F3;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-}
-
-.navbar-menu.active {
-  display: flex;
-}
-
-.navbar-menu li {
-  align-self: start;
-}
-
-.navbar-menu a {
-  color: #183153;
-  text-decoration: none;
-  padding: 1rem;
-  display: block;
-}
-
-@media (min-width: 48rem) {
-  .navbar-toggle {
-    display: none;
-  }
-  .navbar-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: static;
-    width: auto;
-  }
-  .navbar-menu a {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-menu li {
-    align-self: center;
-  }
-}
 header {
   position: relative;
-  margin-top: 50px;
 }
 header .header-grid {
   display: grid;
@@ -302,17 +227,17 @@ header .header-image img {
   box-sizing: border-box;
 }
 
-.logos {
+.logos-container {
   overflow: hidden;
   white-space: nowrap;
   padding-top: 1.5rem;
 }
-.logos svg {
-  fill: #183153;
-  height: 2.5rem;
+.logos-container i {
+  color: #183153;
+  font-size: 2.5rem;
   margin: 0 3rem;
 }
-.logos .logos-slide {
+.logos-container .logos-slider {
   display: inline-block;
   animation: 15s slide infinite linear;
 }
@@ -336,14 +261,14 @@ header .header-image img {
   }
 }
 
-.card {
+.custom-card {
   border-radius: 1rem;
   overflow: hidden;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
+.custom-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15), 0px 12px 24px rgba(0, 0, 0, 0.15);
 }
@@ -367,6 +292,7 @@ header .header-image img {
 
 .card-text {
   padding: 2rem;
+  background-color: white;
 }
 
 .big-card {
@@ -429,18 +355,23 @@ header .header-image img {
   margin-top: 1rem;
 }
 
+@media (min-width: 48rem) {
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .custom-button {
   text-align: center;
-  color: #183153;
-  background-color: #F2F4F3;
-  padding: 0.8rem 3rem;
+  padding: 0.6rem 3rem;
   border-radius: 1rem;
   text-transform: uppercase;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 0.3s;
+  color: #183153;
 }
-.custom-button:hover {
+.custom-button:hover, .custom-button:focus {
   color: #183153;
   background-color: #d6ddda;
 }
@@ -449,9 +380,28 @@ header .header-image img {
   background-color: #bbc5c0;
 }
 
-@media (min-width: 48rem) {
-  .button-container {
-    flex-direction: row;
-    justify-content: center;
-  }
+.github {
+  color: #F2F4F3;
+  background-color: #181717;
+}
+.github:hover, .github:focus {
+  background-color: black;
+  color: #F2F4F3;
+}
+.github:active {
+  background-color: #323030;
+  color: #F2F4F3;
+}
+
+.linkedin {
+  color: #F2F4F3;
+  background-color: #0A66C2;
+}
+.linkedin:hover, .linkedin:focus {
+  background-color: #084d92;
+  color: #F2F4F3;
+}
+.linkedin:active {
+  background-color: #0d80f3;
+  color: #F2F4F3;
 }

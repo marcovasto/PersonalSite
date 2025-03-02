@@ -10,7 +10,7 @@
 
 // work experience's cards
 
-.card {
+.custom-card {
     border-radius: 1rem;
     overflow: hidden;
 
@@ -43,6 +43,7 @@
 
 .card-text {
     padding: 2rem;
+    background-color: white;
 }
 
 // portfolio's card
