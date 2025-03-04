@@ -1,19 +1,19 @@
-// Base styles (fundamentals)
-@import 'base/reset';       // Reset: elimina stili di default del browser
-@import 'base/variables';   // Variabili: colori, dimensioni, ecc.
-@import 'base/mixin';      // Mixin: funzioni e utility globali
+// Base styles
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixin';
 
 // Typography styles
-@import 'typography/typography'; // Font, testi, liste, ecc.
+@import 'typography/typography';
 
 // Layout styles
-@import 'layouts/global';   // Stili globali: *, body, html
-@import 'layouts/layout';   // Container, sezioni, griglia
-@import 'layouts/navbar';   // Navbar e navigazione
+@import 'layouts/global';
+@import 'layouts/layout';
+@import 'layouts/navbar';
 
 // Component styles
-@import 'components/header';       // Header
-@import 'components/contact-form'; // Form di contatto
-@import 'components/logos';        // Slider loghi
-@import 'components/cards';        // Card o sezioni personalizzate
+@import 'components/header';
+@import 'components/contact-form';
+@import 'components/logos';
+@import 'components/cards';
 @import 'components/buttons';

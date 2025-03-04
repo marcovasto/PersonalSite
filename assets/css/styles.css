@@ -261,14 +261,14 @@ header .header-image img {
   }
 }
 
-.custom-card {
+.work-experience-card {
   border-radius: 1rem;
   overflow: hidden;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.custom-card:hover {
+.work-experience-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15), 0px 12px 24px rgba(0, 0, 0, 0.15);
 }
@@ -295,7 +295,7 @@ header .header-image img {
   background-color: white;
 }
 
-.big-card {
+.portfolio-card {
   display: grid;
   margin-top: 2rem;
   border-radius: 1rem;
@@ -304,17 +304,17 @@ header .header-image img {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.big-card:hover {
+.portfolio-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15), 0px 12px 24px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 48rem) {
-  .big-card {
+  .portfolio-card {
     grid-template-columns: 1fr 2fr;
   }
 }
 
-.big-card-image {
+.portfolio-card-image {
   height: 200px;
   background-color: #adc0ff;
   display: flex;
@@ -322,28 +322,32 @@ header .header-image img {
   align-items: center;
   overflow: hidden;
 }
-@media (min-width: 48rem) {
-  .big-card-image {
-    height: 100%;
-  }
-}
-.big-card-image img {
+.portfolio-card-image img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  transform: scale(1.5);
+}
+@media (min-width: 48rem) {
+  .portfolio-card-image {
+    height: 100%;
+  }
+  .portfolio-card-image img {
+    transform: scale(1);
+  }
 }
 
-.big-card-text {
+.portfolio-card-text {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.big-card-text ul {
+.portfolio-card-text ul {
   padding-top: 0.5rem;
 }
-.big-card-text ul li {
+.portfolio-card-text ul li {
   display: inline-block;
   color: #7a98ff;
 }
