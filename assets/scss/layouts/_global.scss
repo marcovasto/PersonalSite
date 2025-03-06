@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;  // Ensures smooth scrolling across the page
+    scroll-behavior: smooth;
     background-color: $tertiary-color;
 }
   
@@ -14,8 +14,6 @@ footer {
     text-align: center;
 }
 
-// remove scrollbar
-
 ::-webkit-scrollbar {
-    display: none;
+    display: none; // remove scrollbar
 }
