@@ -8,7 +8,7 @@ header {
     }
 
     h1 {
-        justify-self: center;
+        text-align: center;
         color: $tertiary-color-2;
     }
 
@@ -18,7 +18,8 @@ header {
         align-items: center;
 
         img {
-            max-width: 500px;
+            max-width: 100%;
+            height: auto;
         }
     }
 

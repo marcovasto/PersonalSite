@@ -165,7 +165,7 @@ header .header-grid {
   gap: 1rem;
 }
 header h1 {
-  justify-self: center;
+  text-align: center;
   color: #7a98ff;
 }
 header .header-image {
@@ -174,7 +174,8 @@ header .header-image {
   align-items: center;
 }
 header .header-image img {
-  max-width: 500px;
+  max-width: 100%;
+  height: auto;
 }
 @media (min-width: 48rem) {
   header .header-grid {
@@ -373,7 +374,6 @@ header .header-image img {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 0.3s;
-  color: #183153;
 }
 .custom-button:hover, .custom-button:focus {
   color: #183153;
@@ -408,4 +408,18 @@ header .header-image img {
 .linkedin:active {
   background-color: #0d80f3;
   color: #F2F4F3;
+}
+
+.submit-button {
+  color: #183153;
+  background-color: #F2F4F3;
+  border: 1px solid #183153;
+}
+.submit-button:hover, .submit-button:focus {
+  background-color: #d6ddda;
+  color: #183153;
+}
+.submit-button:active {
+  background-color: #bbc5c0;
+  color: #183153;
 }
