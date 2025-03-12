@@ -32,6 +32,7 @@ a {
     font-size: $font-size-text;
     font-weight: $font-semi-bold;
     color: $tertiary-color-2;
+    white-space: nowrap;
 
 
     &:hover,

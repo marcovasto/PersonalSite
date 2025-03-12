@@ -38,6 +38,7 @@ a {
   font-size: clamp(1rem, 0.85rem + 0.5vw, 1.3rem);
   font-weight: 600;
   color: #7a98ff;
+  white-space: nowrap;
 }
 a:hover, a:focus {
   color: #adc0ff;
@@ -144,6 +145,7 @@ section.section {
 }
 .navbar {
   background-color: #F2F4F3;
+  /* lines animation */
 }
 .navbar a {
   color: #183153;
@@ -154,6 +156,30 @@ section.section {
 .navbar .nav-link.active {
   color: #183153 !important;
   font-weight: bold;
+}
+.navbar .custom-toggler {
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.navbar .custom-toggler .line {
+  width: 30px;
+  height: 3px;
+  background-color: #183153;
+  border-radius: 2px;
+  transition: transform 0.3s;
+}
+.navbar .custom-toggler[aria-expanded=true] .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar .custom-toggler[aria-expanded=true] .line:nth-child(2) {
+  opacity: 0; /* hide middle line */
+}
+.navbar .custom-toggler[aria-expanded=true] .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 header {
