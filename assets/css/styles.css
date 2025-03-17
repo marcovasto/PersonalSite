@@ -253,6 +253,17 @@ header .header-image img {
   width: 100%;
   box-sizing: border-box;
 }
+.contact-form #success-message,
+.contact-form #error-message {
+  display: none;
+  font-weight: bold;
+}
+.contact-form #success-message {
+  color: green;
+}
+.contact-form #error-message {
+  color: red;
+}
 
 .logos-container {
   overflow: hidden;

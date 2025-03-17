@@ -39,4 +39,19 @@
         width: 100%;
         box-sizing: border-box;
     }
+
+    // Success/error messages
+    #success-message,
+    #error-message {
+        display: none;
+        font-weight: bold;
+    }
+
+    #success-message {
+        color: green;
+    }
+
+    #error-message {
+        color: red;
+    }
 }
