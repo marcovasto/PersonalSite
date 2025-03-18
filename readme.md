@@ -25,7 +25,7 @@ The website reflects my commitment to modern, high-quality web development. It f
 - **Modern UI**: Clean, user-friendly interface built with custom styles and Bootstrap
 
 ## 🌳 Project Structure
-
+```
 ├── assets/
 │   ├── css/
 │   │   └── styles.css
@@ -53,3 +53,4 @@ The website reflects my commitment to modern, high-quality web development. It f
 ├── curriculum-vitae.html
 ├── index.html
 ├── readme.md
+```
