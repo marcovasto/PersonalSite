@@ -2,7 +2,7 @@
     form {
         display: flex;
         flex-direction: column;
-        gap: 0.3rem;
+        gap: 0.5rem;
     }
 
     .form-control {
@@ -31,10 +31,6 @@
         }
     }
 
-    .form-control:last-of-type {
-        margin-bottom: 0.6rem;
-    }
-
     .custom-button {
         width: 100%;
         box-sizing: border-box;
@@ -45,13 +41,16 @@
     #error-message {
         display: none;
         font-weight: bold;
+        padding: 1rem;
+        color: $primary-color;
+        border-radius: 1rem;
     }
 
     #success-message {
-        color: green;
+        background-color: #92E3A9;
     }
 
     #error-message {
-        color: red;
+        background-color: #FF474C;
     }
 }
