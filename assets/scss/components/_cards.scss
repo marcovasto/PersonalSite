@@ -81,14 +81,14 @@
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
-        transform: scale(1.5);
+        transform: scale(1.9);
     }
 
     @include desktop-breakpoint {
         height: 100%;
 
         img {
-            transform: scale(1);
+            transform: scale(1.1);
         }
     }
 }
